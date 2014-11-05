@@ -1,0 +1,37 @@
+/*
+ * memdebug.h
+ *
+ * Created: 3/16/2014 18:38:03
+ *  Author: Evgeny
+ */ 
+
+
+#ifndef MEMDEBUG_H_
+#define MEMDEBUG_H_
+
+
+ 
+ #ifdef __cplusplus
+ extern "C" {
+	 #endif
+	 
+	 
+	 #include <stddef.h>
+	 
+	 
+	 extern size_t getMemoryUsed();
+	 extern size_t getFreeMemory();
+	 extern size_t getLargestAvailableMemoryBlock();
+	 extern size_t getLargestBlockInFreeList();
+	 extern int getNumberOfBlocksInFreeList();
+	 extern size_t getFreeListSize();
+	 extern size_t getLargestNonFreeListBlock();
+	 
+	 
+	 #ifdef __cplusplus
+ }
+ #endif
+ 
+
+
+#endif /* MEMDEBUG_H_ */
